@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.EntityFrameworkCore;
 using Notes.Domain;
 
 namespace Notes.Application.Interfaces

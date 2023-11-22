@@ -11,11 +11,31 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Interfaces\" />
+    <None Remove="Common\" />
+    <None Remove="Common\Mappings\" />
+    <None Remove="Notes\" />
+    <None Remove="Notes\Commands\" />
+    <None Remove="Notes\Commands\CreateNote\" />
+    <None Remove="Notes\Commands\UpdateNote\" />
+    <None Remove="Common\Exceptions\" />
+    <None Remove="Notes\Commands\DeleteCommand\" />
+    <None Remove="Notes\Queries\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Interfaces\" />
+    <Folder Include="Common\" />
+    <Folder Include="Common\Mappings\" />
+    <Folder Include="Notes\" />
+    <Folder Include="Notes\Commands\" />
+    <Folder Include="Notes\Commands\CreateNote\" />
+    <Folder Include="Notes\Commands\UpdateNote\" />
+    <Folder Include="Common\Exceptions\" />
+    <Folder Include="Notes\Commands\DeleteCommand\" />
+    <Folder Include="Notes\Queries\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.14" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
   </ItemGroup>
 </Project>
