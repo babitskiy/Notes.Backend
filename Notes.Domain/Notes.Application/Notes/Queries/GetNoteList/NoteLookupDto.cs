@@ -12,7 +12,7 @@ namespace Notes.Application.Notes.Queries.GetNoteList
 
         public void Mapping(Profile profile)
         {
-            profile.CreateMap<Note, NoteDetailsVm>()
+            profile.CreateMap<Note, NoteLookupDto>()
                 .ForMember(noteDto => noteDto.Id,
                     opt => opt.MapFrom(note => note.Id))
                 .ForMember(noteDto => noteDto.Title,

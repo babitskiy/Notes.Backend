@@ -7,9 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Notes.Domain.csproj" />
-  </ItemGroup>
-  <ItemGroup>
     <None Remove="Interfaces\" />
     <None Remove="Common\" />
     <None Remove="Common\Mappings\" />
@@ -41,5 +38,8 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.14" />
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="MediatR" Version="12.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Notes.Domain.csproj" />
   </ItemGroup>
 </Project>

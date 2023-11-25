@@ -3,6 +3,7 @@ using Notes.Application.Common.Mappings;
 using Notes.Application.Interfaces;
 using Notes.Persistence;
 using Notes.Application;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Notes.WebApi;
 
@@ -10,10 +11,13 @@ public class Program
 {
     public static void Main(string[] args)
     {
-
         var builder = WebApplication.CreateBuilder(args);
 
         var services = builder.Services;
+
+
+
+        services.AddRouting();
 
         services.AddAutoMapper(cfg =>
         {
@@ -38,6 +42,23 @@ public class Program
 
         var app = builder.Build();
 
+        using (var scope = app.Services.CreateScope())
+        {
+            var serviceProvider = scope.ServiceProvider;
+
+            try
+            {
+                var context = serviceProvider.GetRequiredService<NotesDbContext>();
+
+                DbInitializer.Initialize(context);
+            }
+            catch (Exception exception)
+            {
+
+            }
+        }
+
+        app.UseRouting();
         app.UseHttpsRedirection();
         app.UseCors("AllowAll");
 

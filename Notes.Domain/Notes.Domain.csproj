@@ -14,9 +14,36 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.14" />
   </ItemGroup>
   <ItemGroup>
-    <None Remove="Notes.Application\Interfaces\" />
+    <None Remove="Notes.Application\obj\Notes.Application.csproj.nuget.g.props" />
+    <None Remove="Notes.Application\obj\Notes.Application.csproj.nuget.g.targets" />
+    <None Remove="Notes.Application\obj\Debug\net7.0\Notes.Application.assets.cache" />
+    <None Remove="Notes.Application\obj\Debug\net7.0\Notes.Application.csproj.FileListAbsolute.txt" />
+    <None Remove="Notes.Application\obj\project.nuget.cache" />
+    <None Remove="Notes.Application\obj\Notes.Application.csproj.nuget.dgspec.json" />
+    <None Remove="Notes.Application\obj\project.assets.json" />
+    <None Remove="Notes.Application\obj\Debug\net7.0\Notes.Application.csproj.AssemblyReference.cache" />
+    <None Remove="Notes.Application\obj\Debug\net7.0\Notes.Application.csproj.CoreCompileInputs.cache" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Notes.Application\Interfaces\" />
+    <Compile Remove="Notes.Application\DependencyInjection.cs" />
+    <Compile Remove="Notes.Application\Common\Exceptions\NotFoundException.cs" />
+    <Compile Remove="Notes.Application\Common\Mappings\AssemblyMappingProfile.cs" />
+    <Compile Remove="Notes.Application\Common\Mappings\IMapWith.cs" />
+    <Compile Remove="Notes.Application\Notes\Commands\CreateNote\CreateNoteCommand.cs" />
+    <Compile Remove="Notes.Application\Notes\Commands\CreateNote\CreateNoteCommandHandler.cs" />
+    <Compile Remove="Notes.Application\Interfaces\INotesDbContext.cs" />
+    <Compile Remove="Notes.Application\obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" />
+    <Compile Remove="Notes.Application\obj\Debug\net7.0\Notes.Application.GlobalUsings.g.cs" />
+    <Compile Remove="Notes.Application\Notes\Queries\GetNoteDetails\GetNoteDetailsQueryHandler.cs" />
+    <Compile Remove="Notes.Application\Notes\Queries\GetNoteDetails\GetNoteDetailsQuery.cs" />
+    <Compile Remove="Notes.Application\Notes\Queries\GetNoteDetails\NoteDetailsVm.cs" />
+    <Compile Remove="Notes.Application\Notes\Queries\GetNoteList\NoteListVm.cs" />
+    <Compile Remove="Notes.Application\Notes\Commands\UpdateNote\UpdateNoteCommand.cs" />
+    <Compile Remove="Notes.Application\Notes\Commands\UpdateNote\UpdateNoteCommandHandler.cs" />
+    <Compile Remove="Notes.Application\Notes\Commands\DeleteCommand\DeleteNoteCommandHandler.cs" />
+    <Compile Remove="Notes.Application\Notes\Commands\DeleteCommand\DeleteNoteCommand.cs" />
+    <Compile Remove="Notes.Application\Notes\Queries\GetNoteList\GetNoteListQuery.cs" />
+    <Compile Remove="Notes.Application\Notes\Queries\GetNoteList\GetNoteListQueryHandler.cs" />
+    <Compile Remove="Notes.Application\Notes\Queries\GetNoteList\NoteLookupDto.cs" />
   </ItemGroup>
 </Project>
