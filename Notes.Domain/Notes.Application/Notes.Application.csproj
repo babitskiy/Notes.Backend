@@ -20,6 +20,8 @@
     <None Remove="Common\Exceptions\" />
     <None Remove="Notes\Commands\DeleteCommand\" />
     <None Remove="Notes\Queries\" />
+    <None Remove="Notes\Queries\GetNoteDetails\" />
+    <None Remove="Notes\Queries\GetNoteList\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Interfaces\" />
@@ -32,6 +34,8 @@
     <Folder Include="Common\Exceptions\" />
     <Folder Include="Notes\Commands\DeleteCommand\" />
     <Folder Include="Notes\Queries\" />
+    <Folder Include="Notes\Queries\GetNoteDetails\" />
+    <Folder Include="Notes\Queries\GetNoteList\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.14" />

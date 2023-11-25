@@ -1,5 +1,4 @@
-﻿using System;
-using MediatR;
+﻿using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Notes.Application.Common.Exceptions;
 using Notes.Application.Interfaces;
@@ -16,7 +15,7 @@ namespace Notes.Application.Notes.Commands.UpdateNote
 			_dbContext = dbContext;
 		}
 
-        public async Task<Unit> Handle(UpdateNoteCommand request, CancellationToken cancellationToken)
+        public async Task Handle(UpdateNoteCommand request, CancellationToken cancellationToken)
         {
 			var entity =
 				await _dbContext.Notes.FirstOrDefaultAsync(note =>
@@ -33,7 +32,7 @@ namespace Notes.Application.Notes.Commands.UpdateNote
 
 			await _dbContext.SaveChangesAsync(cancellationToken);
 
-			return Unit.Value;
+			return; // Unit.Value;
         }
     }
 }
