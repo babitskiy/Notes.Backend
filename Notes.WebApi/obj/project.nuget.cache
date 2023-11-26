@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "K800i+npfJYwnFDhmnZ4xhOuHGvT+WskmwrlVAZvqgk4Z13bXU6d5JJIcazN7j/F1Cr76KKfJbLnLWG3uhYDYw==",
+  "dgSpecHash": "Tgu264eGduz9RJKxXW98ffZIJRcS2P5Ok5xAjvs5Cc1CF1YxmTMngDiXquHCFp6iVZNqu0XEvxRM7NYWdQooLQ==",
   "success": true,
   "projectFilePath": "/Users/john/Projects/Notes.Backend/Notes.WebApi/Notes.WebApi.csproj",
   "expectedPackageFiles": [
     "/Users/john/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/john/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "/Users/john/.nuget/packages/fluentvalidation/11.8.1/fluentvalidation.11.8.1.nupkg.sha512",
+    "/Users/john/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.8.1/fluentvalidation.dependencyinjectionextensions.11.8.1.nupkg.sha512",
     "/Users/john/.nuget/packages/mediatr/12.2.0/mediatr.12.2.0.nupkg.sha512",
     "/Users/john/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/Users/john/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",

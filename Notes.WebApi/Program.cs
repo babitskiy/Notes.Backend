@@ -4,6 +4,7 @@ using Notes.Application.Interfaces;
 using Notes.Persistence;
 using Notes.Application;
 using Microsoft.Extensions.DependencyInjection;
+using Notes.WebApi.Middleware;
 
 namespace Notes.WebApi;
 
@@ -58,6 +59,7 @@ public class Program
             }
         }
 
+        app.UseCustomExceptionHandler();
         app.UseRouting();
         app.UseHttpsRedirection();
         app.UseCors("AllowAll");

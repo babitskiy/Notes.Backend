@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "/rJl0VPj5fk7Dak7lzpDWs5uad3SCPi7+pk0MhueMQix3szA8KGN5mgydTUKt/fJ1Tpf+RI/CfzsH/mBZlqr2g==",
+  "dgSpecHash": "2MjcLxB74rxTTG3UCWjWgZU285KIrlVIHNXfUJkDllouEC2/mJHd7rpmW2Se9qbevlYrwlhheG4pPh/i4f7tbQ==",
   "success": true,
   "projectFilePath": "/Users/john/Projects/Notes.Backend/Notes.Persistence/Notes.Persistence.csproj",
   "expectedPackageFiles": [
     "/Users/john/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
+    "/Users/john/.nuget/packages/fluentvalidation/11.8.1/fluentvalidation.11.8.1.nupkg.sha512",
+    "/Users/john/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.8.1/fluentvalidation.dependencyinjectionextensions.11.8.1.nupkg.sha512",
     "/Users/john/.nuget/packages/mediatr/12.2.0/mediatr.12.2.0.nupkg.sha512",
     "/Users/john/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/Users/john/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",

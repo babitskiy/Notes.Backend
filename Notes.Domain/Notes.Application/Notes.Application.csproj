@@ -19,6 +19,7 @@
     <None Remove="Notes\Queries\" />
     <None Remove="Notes\Queries\GetNoteDetails\" />
     <None Remove="Notes\Queries\GetNoteList\" />
+    <None Remove="Common\Behaviors\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Interfaces\" />
@@ -33,11 +34,14 @@
     <Folder Include="Notes\Queries\" />
     <Folder Include="Notes\Queries\GetNoteDetails\" />
     <Folder Include="Notes\Queries\GetNoteList\" />
+    <Folder Include="Common\Behaviors\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.14" />
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="FluentValidation" Version="11.8.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.8.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Notes.Domain.csproj" />
